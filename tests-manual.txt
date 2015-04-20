@@ -1,0 +1,14 @@
+GET (plural)
+curl -u jibarish:foo -i http://127.0.0.1:5000/shalaladida/api/v1.0/songs
+
+GET (singular)
+curl -u jibarish:foo -i http://127.0.0.1:5000/shalaladida/api/v1.0/songs/2
+
+POST
+curl -u jibarish:foo -i -H "Content-Type: application/json" -X POST -d '{"title":"The Weight", "artist":"The Band", "key":"A"}' http://127.0.0.1:5000/shalaladida/api/v1.0/songs
+
+PUT
+curl -u jibarish:foo -i -H "Content-Type: application/json" -X PUT -d '{"done":false}' http://127.0.0.1:5000/shalaladida/api/v1.0/songs/2
+
+DELETE
+curl -u jibarish:foo -i -H "Content-Type: application/json" -X DELETE http://127.0.0.1:5000/shalaladida/api/v1.0/songs/2
