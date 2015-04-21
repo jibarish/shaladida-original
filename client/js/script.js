@@ -1,4 +1,8 @@
-var module = angular.module('app', []);
+var module = angular.module('app', ['ui.bootstrap']);
+
+module.controller('CollapseDemoCtrl', function ($scope) {
+  $scope.isCollapsed = true;  
+});
 
 module.service('SongService', function () {
     //to create unique song id
