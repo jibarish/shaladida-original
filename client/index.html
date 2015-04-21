@@ -25,17 +25,18 @@
             <span class="label label-success">Done</span>
           </td>
           <td>
-            <p><b>{{ song.title }}</b></p>
-            <p><em>{{ song.artist }}</em></p>
-            <p><p>{{ song.key }}</p></p>
-                        <div class="panel panel-default" ng-controller="CollapseDemoCtrl">
+            <!-- <p><b>{{ song.title }}</b></p> -->
+            <div class="panel panel-default" ng-controller="CollapseDemoCtrl">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a href="#" ng-click="isCollapsed = !isCollapsed">
-                    Lyrics
+                    {{ song.title }}
                   </a>
                 </h4>
               </div>
+            <p><em>{{ song.artist }}</em></p>
+            <p><p>{{ song.key }}</p></p>
+            
               <div>
                 <div class="panel-body" ng-hide="isCollapsed">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 
